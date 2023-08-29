@@ -6,6 +6,7 @@ public class Alunos {
    public String email;
    public int nota1;
    public int not2;
+   public int Frequencia;
 
 
 }

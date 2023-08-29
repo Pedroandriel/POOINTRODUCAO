@@ -12,17 +12,20 @@ public class main {
         /** Instance Scanner */
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("O que quer cadastrar [1- Prof 2- Alunos]");
+        System.out.println("O que quer cadastrar [1- Prof 2- Alunos 3- Aluno ]");
         int opcao = teclado.nextInt();
 
-        if (opcao==1){
-            objRegister.Resgister();
-        } else if (opcao==2) {
+        if (opcao == 1) {
+            objRegister.RegisterTeacher();
+        } else if (opcao == 2) {
             objRegister.RegisterAlunos();
 
-        }else {
+        } else if (opcao == 3) {
+            objRegister.BothRegister();
+        } else {
             System.out.println("Opção Invalida !!!");
         }
 
+
+        }
     }
-}
